@@ -18,26 +18,23 @@ function artist_commentary (artist_node, title_node, description_node) {
 }
 
 function commentary_from_text (artist, artist_link, title, description) {
-	description = description.replace('[/section]', '(/section)');
 	const full_title = (() => {
-		const fixed_title = title.replace(/\[/gu, '(').replace(/\]/gu, ')');
+		const fixed_title = title.replace(/\[/gu, '(').replace(/\]/gu, ')').replace(/\n/, '');
 		if (artist === null) {
 			return fixed_title;
 		} else if (artist_link === null || artist_link === undefined) {
 			return `${fixed_title} - by ${artist}`;
 		} else {
-			return `${fixed_title} - by ${artist} ( ${artist_link} )`;
+			return `${fixed_title} - by "${artist}":${artist_link}`;
 		}
 	})();
 
 	const header = (() => {
 		const lines = description.split('\n').length;
-		const should_expand = lines <= 5 || description.length <= 500;
-		const expanded_text = should_expand ? ',expanded' : '';
-		return `[section${expanded_text}=${full_title}]`;
+		return `h5.${full_title}`;
 	})();
 
-	return `From source:\n${header}\n${description}\n[/section]`;
+	return `${header}\n${description}\n`;
 }
 
 function commentary_button (description) {

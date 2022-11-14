@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name         Idem's Sourcing Suite
 // @description  Adds a whole bunch of utilities, helpful for sourcing images
-// @version      1.00051
+// @version      1.00052
 // @author       Meras
 
 // @namespace    https://github.com/Sasquire/
 // @supportURL   https://github.com/Sasquire/Idems-Sourcing-Suite
-// @updateURL    https://raw.githubusercontent.com/Sasquire/Idems-Sourcing-Suite/master/distribution/header.user.js
-// @downloadURL  https://raw.githubusercontent.com/Sasquire/Idems-Sourcing-Suite/master/distribution/main.user.js
-// @icon         https://raw.githubusercontent.com/Sasquire/Idems-Sourcing-Suite/master/resources/icon32.png
+// @updateURL    https://raw.githubusercontent.com/faucetlol2/Idems-Sourcing-Suite/master/distribution/header.user.js
+// @downloadURL  https://raw.githubusercontent.com/faucetlol2/Idems-Sourcing-Suite/master/distribution/main.user.js
+// @icon         https://raw.githubusercontent.com/faucetlol2/Idems-Sourcing-Suite/master/resources/icon32.png
 
 // @license      Unlicense
 
-//               Common v25
+//               Common v26
 // @noframes
 // @connect      e621.net
 // @grant        GM.addStyle
